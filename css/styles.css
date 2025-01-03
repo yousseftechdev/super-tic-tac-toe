@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #212121;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.big-cell {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background-color: #333;
+    padding: 2px;
+}
+
+.small-cell {
+    width: 40px; /* Set an initial size for the cells */
+    height: 40px; /* Set an initial size for the cells */
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.small-cell:hover {
+    background-color: #e0e0e0;
+}
+
+.small-cell:disabled {
+    cursor: not-allowed;
+}
+
+.status {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.reset-btn, .back-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.reset-btn:hover, .back-btn:hover {
+    transform: scale(1.1) translateY(-5px);
+    background-color: #45a049;
+}
+
+.big-cell.won-x {
+    background-color: #ff6464;
+}
+
+.big-cell.won-o {
+    background-color: #44a1ff;
+}
+
+.big-cell.active {
+    background-color: #6bdd51;
+}
+
+.btnCon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        max-width: 90vw;
+    }
+
+    .small-cell {
+        font-size: 1em;
+    }
+}
