@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #212121;
+    background-image: url("../img/bgDark.jpg");
     color: #f0f0f0;
 }
 
@@ -14,7 +14,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #414141;
+    background-color: #41414150;
+    backdrop-filter: blur(20px);
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -47,8 +48,8 @@ p {
 }
 
 .small-cell {
-    width: 40px; /* Set an initial size for the cells */
-    height: 40px; /* Set an initial size for the cells */
+    width: 40px;
+    height: 40px;
     background-color: #fff;
     color: #000;
     border: none;
@@ -73,7 +74,7 @@ p {
 .reset-btn, .back-btn {
     font-size: 1em;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #9194bd;
     color: white;
     border: none;
     border-radius: 8px;
@@ -83,7 +84,7 @@ p {
 
 .reset-btn:hover, .back-btn:hover {
     transform: scale(1.1) translateY(-5px);
-    background-color: #45a049;
+    background-color: #696c8a;
 }
 
 .big-cell.won-x {
@@ -95,7 +96,7 @@ p {
 }
 
 .big-cell.active {
-    background-color: #6bdd51;
+    background-color: #a3a7d6;
 }
 
 .btnCon {
