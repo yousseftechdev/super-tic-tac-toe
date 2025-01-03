@@ -1,33 +1,8 @@
-# Super Tic Tac Toe
+# Super Tic Tac Toe Rules
 
-## Project Overview
-Super Tic Tac Toe is an enhanced version of the classic Tic Tac Toe game, featuring a larger game board and more complex gameplay mechanics. This project includes an HTML file for the structure, a CSS file for styling, and a JavaScript file for game logic.
-
-## Project Structure
-```
-my-project
-├── css
-│   └── styles.css       # Styles for the application
-├── js
-│   └── script.js        # JavaScript code for game logic
-├── index.html           # Main HTML structure for the application
-└── README.md            # Documentation for the project
-```
-
-## Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, etc.)
-
-### Running the Application
-1. Clone the repository or download the project files.
-2. Open the `index.html` file in your web browser.
-3. Enjoy playing Super Tic Tac Toe!
-
-## Features
-- Player vs Player gameplay
-- Dynamic game board
-- Reset button to restart the game
-
-## Contributing
-Feel free to submit issues or pull requests for improvements or bug fixes.
+1. The game is played on a 3x3 grid of 3x3 grids.
+2. Players take turns placing their mark (X or O) in one of the small cells.
+3. A player wins a small grid by getting three of their marks in a row (horizontally, vertically, or diagonally).
+4. Winning a small grid gives the player control of that grid in the larger game.
+5. The first player to win three small grids in a row (horizontally, vertically, or diagonally) wins the game.
+6. If a player is sent to a small grid that has already been won or is full, they can choose any other small grid.
